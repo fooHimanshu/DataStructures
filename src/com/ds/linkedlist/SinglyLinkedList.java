@@ -1,5 +1,5 @@
 /**
- * This Java class is a part of com.himanshu.ds, a package
+ * This Java class is a part of com.ds, a package
  * containing the basic data structure code.
  *  
  * TODO: Sorting maybe at some point.
