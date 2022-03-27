@@ -92,6 +92,11 @@ public class Stack<T> {
 	private int size; // Tracks the number of elements in the Stack at any point. 
 	private Element<T> top; // Keeps track of the latest element in the Stack.
 	
+	/**
+	 * Initialises the Stack with user defined size.
+	 * 
+	 * @param stack_size the size of the stack
+	 */
 	public Stack(int stack_size) {
 		this.maxSize = size; // the size of an array
 		this.size = 0; // just to make things clear
@@ -136,6 +141,7 @@ public class Stack<T> {
 	 * Removes elements to the top of the Stack.
 	 * 
 	 * @throws DSUnderFlowException if the Stack is has no item/data.
+	 * @return data the removed data
 	 */
 	public T pop() throws DSUnderFlowException {
 		if (this.size == 0) {
