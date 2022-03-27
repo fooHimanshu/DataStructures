@@ -8,7 +8,7 @@
 package com.ds.linkedlist;
 
 /**
- * Part of the package com.himanshu.ds, a personal package with a number of DS implementation, 
+ * Part of the package com.ds, a personal package with a number of DS implementation, 
  * SinglyLinkedList class containing a Node class data structure. 
  * The SinglyLinkedList class could be thought of as a manager of
  * a Node class; The SinglyLinkedList class provides a number of 
