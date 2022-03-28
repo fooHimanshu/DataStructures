@@ -32,8 +32,7 @@ public class RunTheDataStructures {
         int data; 
         informer.info("Adding 1-10 Integers to the Singly Linked List.");
         for (data=1; data<=10; data++) {
-        	list.append(data);
-        	
+        	list.append(data);	
         }
         try {
         	list.removeData(1);
