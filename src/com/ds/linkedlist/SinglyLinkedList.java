@@ -239,10 +239,10 @@ public class SinglyLinkedList<T> {
         		System.out.println(pointer.getData());
         		break;
         	} else {
-        		System.out.println(pointer.getData());
+        		System.out.print(pointer.getData() + " ");
         		pointer = pointer.getNextNode();
         	}
-        }
+        } System.out.println(); 
 	}
 }
 	
