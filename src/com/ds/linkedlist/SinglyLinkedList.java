@@ -243,7 +243,7 @@ public class SinglyLinkedList<T> {
         		pointer = pointer.getNextNode();
         	}
         } System.out.println(); 
-	}
+    }
 }
 	
 
