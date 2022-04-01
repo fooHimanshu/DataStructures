@@ -175,7 +175,7 @@ public class SinglyLinkedList<T> {
 	public void removeData(T data) throws DSUnderFlowException {
 		// return if the list is empty
 		if(this.isEmpty()) {
-			throw new DSUnderFlowException("The Singly Linked List is empty!");
+			this.throwUnderFlowException(null);
 		}
 
 		Node<T> currentNode = this.head;
@@ -207,7 +207,7 @@ public class SinglyLinkedList<T> {
 	 */
 	public void reverseList() throws DSUnderFlowException {
 		if (this.isEmpty()) {
-			throw new DSUnderFlowException("The Singly Linked List is empty!");
+			this.throwUnderFlowException(null);
 		} else {
 			Node<T> currentNode = this.head;
 			Node<T> prevNode = null;
@@ -226,6 +226,22 @@ public class SinglyLinkedList<T> {
 			}
 		}
 	}
+	
+	/**
+	 * Helper function to reduce code duplication for
+	 * throwing an exception when the singly linked list
+	 * is empty.
+	 * 
+	 * @param msg a custom error could be passed or just pass null
+	 * @throws DSUnderFlowException a common exception message when the list is empty.
+	 */
+	private void throwUnderFlowException(String msg) throws DSUnderFlowException {
+		if (msg == null) {
+			throw new DSUnderFlowException("The Singly Linked List is empty!");
+		} else {
+			throw new DSUnderFlowException(msg);
+		}
+	}
 
 	/**
 	 * Prints data in the order head to tail.
@@ -237,7 +253,7 @@ public class SinglyLinkedList<T> {
 		Node<?> pointer = list.head;
 		while(true) {
         	if (list.isEmpty()) {
-        		throw new DSUnderFlowException("The Singly Linked List is empty!");
+        		list.throwUnderFlowException("The Singly Linked List is not iterable as it is empty!");
         	}
         	if (pointer.getNextNode() == null) {
         		System.out.println(pointer.getData());
