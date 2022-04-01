@@ -29,6 +29,7 @@ public class Stack<T> {
 	 *
 	 * @param <T> a promise to keep the class data type independent.
 	 */
+	@SuppressWarnings("hiding")
 	private class Element<T> {
 		private T data; // The data to be stored
 		private Element<T> prevCellPointer; // The pointer to the second-last Element 
@@ -63,6 +64,7 @@ public class Stack<T> {
 		 * 
 		 * @param data accepts data of any type.
 		 */
+		@SuppressWarnings("unused")
 		public void setData(T data) {
 			this.data = data;
 		}
@@ -83,6 +85,7 @@ public class Stack<T> {
 		 * 
 		 * @param nextCellPointer an instance of Element class.
 		 */
+		@SuppressWarnings("unused")
 		public void setPrevCellPointer(Element<T> nextCellPointer) {
 			this.prevCellPointer = nextCellPointer;
 		}		
