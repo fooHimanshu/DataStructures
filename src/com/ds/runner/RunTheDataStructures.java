@@ -8,6 +8,7 @@ package com.ds.runner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import com.ds.exceptions.DSUnderFlowException;
 import com.ds.linkedlist.*;
 /**
  * This class should only be used as a runner class
@@ -24,8 +25,9 @@ public class RunTheDataStructures {
 	 * Static method with not so good logging. 
 	 * 
 	 * @param args this param was not used.
+	 * @throws DSUnderFlowException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws DSUnderFlowException {
 		informer.info("Creating an instance of Singly Linked List");
 		SinglyLinkedList<Integer> list = new SinglyLinkedList<Integer>();
 		informer.info("Singly linked list has been created");
