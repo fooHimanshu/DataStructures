@@ -7,6 +7,9 @@
 
 package com.ds.linkedlist;
 
+import com.ds.exceptions.DSOverFlowException;
+import com.ds.exceptions.DSUnderFlowException;
+
 /**
  * Part of the package com.ds, a personal package with a number of DS implementation, 
  * SinglyLinkedList class containing a Node class data structure. 
@@ -167,12 +170,12 @@ public class SinglyLinkedList<T> {
 	 * Removes the first occurrence of the matching data node form an unknown location.
 	 * 
 	 * @param data the data of to be removed
+	 * @throws DSOverFlowException if the Singly Linked List is empty.
 	 */
-	public void removeData(T data) {
+	public void removeData(T data) throws DSUnderFlowException {
 		// return if the list is empty
 		if(this.isEmpty()) {
-			System.out.println("The List is Empty!");
-			return;
+			throw new DSUnderFlowException("The Singly Linked List is empty!");
 		}
 
 		Node<T> currentNode = this.head;
@@ -200,10 +203,11 @@ public class SinglyLinkedList<T> {
 	
 	/**
 	 * Reverses the entire Linked List.
+	 * @throws DSOverFlowException if the Singly Linked List is empty.
 	 */
-	public void reverseList() {
+	public void reverseList() throws DSUnderFlowException {
 		if (this.isEmpty()) {
-			return;
+			throw new DSUnderFlowException("The Singly Linked List is empty!");
 		} else {
 			Node<T> currentNode = this.head;
 			Node<T> prevNode = null;
@@ -227,13 +231,13 @@ public class SinglyLinkedList<T> {
 	 * Prints data in the order head to tail.
 	 * 
 	 * @param list the linked list which needs to be printed
+	 * @throws DSOverFlowException if the Singly Linked List is empty.
 	 */
-	public static void printAllData(SinglyLinkedList<?> list) {
+	public static void printAllData(SinglyLinkedList<?> list) throws DSUnderFlowException {
 		Node<?> pointer = list.head;
 		while(true) {
-
         	if (list.isEmpty()) {
-        		break;
+        		throw new DSUnderFlowException("The Singly Linked List is empty!");
         	}
         	if (pointer.getNextNode() == null) {
         		System.out.println(pointer.getData());
