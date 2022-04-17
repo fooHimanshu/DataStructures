@@ -202,6 +202,26 @@ public class SinglyLinkedList<T> {
 	}
 	
 	/**
+	 * Recursively reverse the node with this function.
+	 * 
+	 * @param node pass the head node
+	 * @return the head node
+	 */
+	public Node<T> reverseListRecursively(Node<T> node) {
+		
+		if (node == null || node.getNextNode() == null) {
+			this.head = node;
+			return node;
+		}
+		
+		Node <T> currentNode = reverseListRecursively(node.getNextNode());
+		currentNode.setPointerToNextNode(node);
+		node.setPointerToNextNode(null);
+		this.tail = node;
+		return node;
+	}
+	
+	/**
 	 * Reverses the entire Linked List.
 	 * @throws DSOverFlowException if the Singly Linked List is empty.
 	 */
