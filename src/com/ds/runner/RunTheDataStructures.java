@@ -46,7 +46,7 @@ public class RunTheDataStructures {
         SinglyLinkedList.printAllData(list);
         try {
         	informer.info("Reversing the Singly List");
-        	list.reverseList();
+        	list.reverseListRecursively(list.getHead());
         	SinglyLinkedList.printAllData(list);
         } catch (Exception e) {
         	informer.log(Level.SEVERE, "Exception :: ", e);
