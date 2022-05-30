@@ -56,24 +56,20 @@ public class GraphUsingLinkedList implements GraphInterface {
 	 */
 	@Override
 	public void addEdge(int v1, int v2) {
-		
 		// check if the node number is valid
 		if (v1 < 0 || v2 < 0 || v1 > size - 1 || v1 > size - 1) {
 			throw new IllegalArgumentException("One/Both of the vertices number is/are not valid.");
 		} 
-		
 		if(graphList.get(v1) == null) {
 			SinglyLinkedList<Integer> subGraph = new SinglyLinkedList<>();
 			subGraph.append(v1);
 			graphList.set(v1, subGraph);
-		}
-		
+		}		
 		if(graphList.get(v2) == null) {
 			SinglyLinkedList<Integer> subGraph = new SinglyLinkedList<>();
 			subGraph.append(v2);
 			graphList.set(v2, subGraph);
 		}
-		
 		graphList.get(v1).append(v2);
 		
 		if(graphType ==  GraphType.UNDIRECTED) {
@@ -93,12 +89,10 @@ public class GraphUsingLinkedList implements GraphInterface {
 		if (v < 0  || v > size - 1) {
 			throw new IllegalArgumentException("The vertex number is not valid.");
 		}
-		
 		List<Integer> neighbours = this.graphList.get(v).getAllData().subList(1, v); // sublist because the first one is the current v node 
 		if (neighbours != null) {
 			Collections.sort(neighbours);
 		}
-
 		return neighbours;
 	}
 }
