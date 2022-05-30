@@ -1,13 +1,15 @@
 # Data Structures
 
-Data Structure is a way of storing and organising data to make data operations more effective and efficient. There is exist a range of Data Structures and in this repo only the followings are used:
+Data Structure is a way of storing and organising data to make data operations more effective and efficient. There is exist a range of Data Structures and in this repo only the followings are implemented:
 
 | S.No. | Data Structure                                               | Implementation     | in-code documentation | Markdown Documentation | Testing Status     |
 |-------|--------------------------------------------------------------|--------------------|-----------------------|------------------------|--------------------|
-| 1     | [Singly Linked List](./src/com/ds/linkedlist/LinkedList.md)  | :white_check_mark: | :white_check_mark:    | TODO                   | :white_check_mark: |
-| 2     | [Queue Using Linked List](./src/com/ds/linkedlist/LQueue.md) | :white_check_mark: | :white_check_mark:    | TODO                   | TODO               |
-| 3     | [Stack](./src/com/ds/linkedlist/Stack.md)                    | :white_check_mark: | :white_check_mark:    | TODO                   | TODO               |
-| 4     | [Graphs](./src/com/ds/linkedlist/Graphs.md)                  | :white_check_mark: | :white_check_mark:    | TODO                   | :white_check_mark: |
+| 1     | [Singly Linked List](./src/com/ds/linkedlist/LinkedList.md)  | :white_check_mark: | :white_check_mark:    | `TODO`                   | :white_check_mark: |
+| 2     | [Queue Using Linked List](./src/com/ds/linkedlist/LQueue.md) | :white_check_mark: | :white_check_mark:    | `TODO`                  | `TODO`               |
+| 3     | [Stack](./src/com/ds/linkedlist/Stack.md)                    | :white_check_mark: | :white_check_mark:    | `TODO`                  | `TODO`             |
+| 4     | [Graphs](./src/com/ds/linkedlist/Graphs.md)                  | :white_check_mark: | :white_check_mark:    | `TODO`                  | :white_check_mark: |
+
+:warning: If Markdown Documentation status is `TODO` on the table above, the hyperlinks won't work however, the code would still be there in the /src/com/ds/ directory to review. Thanks!
 
 ## Rules Followed
 
