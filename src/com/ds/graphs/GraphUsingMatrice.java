@@ -69,7 +69,6 @@ public class GraphUsingMatrice implements GraphInterface {
 	 */
 	@Override
 	public List<Integer> getAdjacentVertices(int v) {
-		
 		if (v < 0  || v > size - 1 ) {
 			throw new IllegalArgumentException("The vertice is not valid.");
 		}		List<Integer> neighbours = new ArrayList<Integer>();
@@ -79,9 +78,7 @@ public class GraphUsingMatrice implements GraphInterface {
 				neighbours.add(i);
 			}
 		}
-		
 		Collections.sort(neighbours);
-		
 		return neighbours;
 	}
 	
