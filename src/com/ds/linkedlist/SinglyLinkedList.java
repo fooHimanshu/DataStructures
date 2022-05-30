@@ -7,6 +7,9 @@
 
 package com.ds.linkedlist;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.ds.exceptions.DSOverFlowException;
 import com.ds.exceptions.DSUnderFlowException;
 
@@ -284,6 +287,30 @@ public class SinglyLinkedList<T> {
         	}
         } System.out.println(); 
     }
+	
+	/**
+	 * Returns all the nodes in form of a list.
+	 * 
+	 * @return list of all nodes
+	 */
+	@SuppressWarnings("unchecked")
+	public List<T> getAllData() {
+		List<T> allData = new ArrayList<>();
+		Node<?> pointer = this.head;
+		while(true) {
+        	if (this.isEmpty()) {
+        		return null;
+        	} 
+        	
+        	allData.add((T) pointer.getData());
+        	if (pointer.getNextNode() == null) {
+        	   	break;
+        	} 
+        	pointer = pointer.getNextNode();
+        }
+																											
+		return allData;
+	}
 }
 	
 
