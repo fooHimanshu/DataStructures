@@ -1,6 +1,6 @@
 # Data Structures
 
-Data Structure is a way of storing and organising data to make data operations more effective and efficient. There is exist a range of Data Structures and in this repo only the followings are implemented:
+Data Structure is a way of storing and organising data to make data operations more effective and efficient. There exist a range of Data Structures and in this repo only the followings are implemented:
 
 | S.No. | Data Structure                                               | Implementation     | in-code documentation | Markdown Documentation | Testing Status     |
 |-------|--------------------------------------------------------------|--------------------|-----------------------|------------------------|--------------------|
