@@ -17,7 +17,7 @@ Data Structure is a way of storing and organising data to make data operations m
 
 ## Rules Followed
 
-1. The DS should be sef-sufficient, i.e., before implementing the Data Structure itself, implement the requirements which, could be in form of implementing another required DS, implementation specification like Interfaces or any error handling mechanism. This is to reduce the Java native DS.
+1. The DS should be self-sufficient, i.e., before implementing the Data Structure itself, implement the requirements which, could be in form of implementing another required DS, implementation specification like Interfaces or any error handling mechanism. This is to reduce the Java native DS.
 
 2. Every DS should have their own respective self explanatory documentation clearly mentioning the Space and Time complexity of the underlying DS.
 
