@@ -1,3 +1,7 @@
+## Who this repository is for?
+
+This repo is meant to be used as a reference guide and could be used by pretty much anyone! This repo is also for skills demonstration purposes. 
+
 # Data Structures
 
 Data Structure is a way of storing and organising data to make data operations more effective and efficient. There exist a range of Data Structures and in this repo only the followings are implemented:
@@ -13,13 +17,9 @@ Data Structure is a way of storing and organising data to make data operations m
 
 ## Rules Followed
 
-1. Before implementing the Data Structure, implement the requirements which, could be in form of implementing a required DS, implementation specification like Interfaces or any error handling mechanism. This is to reduce the Java native DS.
+1. The DS should be sef-sufficient, i.e., before implementing the Data Structure itself, implement the requirements which, could be in form of implementing another required DS, implementation specification like Interfaces or any error handling mechanism. This is to reduce the Java native DS.
 
 2. Every DS should have their own respective self explanatory documentation clearly mentioning the Space and Time complexity of the underlying DS.
-
-## Who this repository is for?
-
-This repo is meant to be used as a reference guide and could be used by pretty much anyone! This repo is also for skills demonstration purposes. 
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
